@@ -1,4 +1,3 @@
-import csv
 import pandas as pd
 
 df1 = pd.read_excel('./input/H-1B_FY14_Q4.xlsx')
