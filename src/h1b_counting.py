@@ -17,7 +17,7 @@ print(totalCert)
 
 # top 10 occupations
 occup = df.groupby('SOC_NAME')
-df_cert = occup.apply(lambda x: sum(x.CASE_STATUS == 'CERTIFIED')
+df_cert = occup.apply(lambda x: sum(x.CASE_STATUS == 'CERTIFIED'))
 df_cert = df_cert.sort_values(ascending=False)
 
 top_occup = pd.DataFrame()
